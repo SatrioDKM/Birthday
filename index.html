@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kejutan Spesial Untukmu!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="prompt-container" class="container">
+        <h1>Sebuah Pesan Untukmu...</h1>
+        <p>Tapi sebelumnya, boleh tahu nama panggilanmu?</p>
+        <input type="text" id="nama-input" placeholder="Ketik di sini...">
+        <button id="mulai-button">Lanjutkan!</button>
+    </div>
+
+    <div id="main-content" class="container hidden">
+        <header>
+            <h1>Happy Birthday, <span id="nama-panggilan">Diana</span>!</h1>
+            <p>Selamat ulang tahun yang ke-21! Semoga harimu seindah dirimu.</p>
+        </header>
+
+        <main>
+            <div class="tombol-wrapper">
+                <button class="tombol-reveal" data-target="ucapan-content">💌 Klik untuk Baca Suratku</button>
+                <button class="tombol-reveal" data-target="galeri-content">📸 Buka Galeri Kenangan</button>
+                <button class="tombol-reveal" data-target="playlist-content">🎶 Dengerin Playlist Kita</button>
+            </div>
+
+            <div id="ucapan-content" class="content-box hidden">
+                <h2>Surat Spesial Untukmu,</h2>
+                <p>Hai sayang, selamat ulang tahun ya. Aku berdoa semoga di usiamu yang baru ini, kamu selalu diberikan
+                    kesehatan, kebahagiaan yang melimpah, dan semua impianmu bisa terwujud. Terima kasih sudah menjadi
+                    cahaya di hidupku. Aku sayang kamu!</p>
+            </div>
+
+            <div id="galeri-content" class="content-box hidden">
+                <h2>Kenangan Manis Kita</h2>
+                <div class="galeri">
+                    <img src="https://via.placeholder.com/300x300.png?text=FOTO+1" alt="Kenangan 1">
+                    <img src="https://via.placeholder.com/300x300.png?text=FOTO+2" alt="Kenangan 2">
+                    <img src="https://via.placeholder.com/300x300.png?text=FOTO+3" alt="Kenangan 3">
+                </div>
+            </div>
+
+            <div id="playlist-content" class="content-box hidden">
+                <h2>Lagu-Lagu Kita</h2>
+                <p>Setiap lagu punya cerita. Dan ini cerita kita.</p>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+        </main>
+
+        <footer>
+            <p>Dibuat dengan ❤️ oleh [Nama Kamu]</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
